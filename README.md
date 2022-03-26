@@ -145,7 +145,7 @@ Your database should contain the following four models, including the requiremen
     * Set as primary key.
 
     * Uses auto increment. -->
-
+<!-- 
   * `product_id`
 
     * Integer.
@@ -156,7 +156,7 @@ Your database should contain the following four models, including the requiremen
 
     * Integer.
 
-    * References the `Tag` model's `id`.
+    * References the `Tag` model's `id`. -->
 
 ### Associations
 
