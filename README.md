@@ -79,7 +79,7 @@ Your database should contain the following four models, including the requiremen
 * `Product`
 
   * `id`
-  
+<!--   
     * Integer.
   
     * Doesn't allow null values.
@@ -92,16 +92,16 @@ Your database should contain the following four models, including the requiremen
   
     * String.
   
-    * Doesn't allow null values.
-
+    * Doesn't allow null values. -->
+<!-- 
   * `price`
   
     * Decimal.
   
     * Doesn't allow null values.
   
-    * Validates that the value is a decimal.
-
+    * Validates that the value is a decimal. -->
+<!-- 
   * `stock`
   
     * Integer.
@@ -110,16 +110,16 @@ Your database should contain the following four models, including the requiremen
   
     * Set a default value of `10`.
   
-    * Validates that the value is numeric.
+    * Validates that the value is numeric. -->
 
-  * `category_id`
+  <!-- * `category_id`
   
     * Integer.
   
-    * References the `Category` model's `id`.
+    <!-- * References the `Category` model's `id`. -->
 
 * `Tag`
-
+<!-- 
   * `id`
   
     * Integer.
@@ -128,15 +128,15 @@ Your database should contain the following four models, including the requiremen
   
     * Set as primary key.
   
-    * Uses auto increment.
+    * Uses auto increment. -->
 
-  * `tag_name`
+  <!-- * `tag_name`
   
-    * String.
+    * String. -->
 
 * `ProductTag`
 
-  * `id`
+  <!-- * `id`
 
     * Integer.
 
@@ -144,7 +144,7 @@ Your database should contain the following four models, including the requiremen
 
     * Set as primary key.
 
-    * Uses auto increment.
+    * Uses auto increment. -->
 
   * `product_id`
 
@@ -162,11 +162,11 @@ Your database should contain the following four models, including the requiremen
 
 You'll need to execute association methods on your Sequelize models to create the following relationships between them:
 
-* `Product` belongs to `Category`, and `Category` has many `Product` models, as a category can have multiple products but a product can only belong to one category.
+<!-- * `Product` belongs to `Category`, and `Category` has many `Product` models, as a category can have multiple products but a product can only belong to one category. -->
 
-* `Product` belongs to many `Tag` models, and `Tag` belongs to many `Product` models. Allow products to have multiple tags and tags to have many products by using the `ProductTag` through model.
-
-> **Hint:** Make sure you set up foreign key relationships that match the column we created in the respective models.
+<!-- * `Product` belongs to many `Tag` models, and `Tag` belongs to many `Product` models. Allow products to have multiple tags and tags to have many products by using the `ProductTag` through model. -->
+<!-- 
+> **Hint:** Make sure you set up foreign key relationships that match the column we created in the respective models. -->
 
 ### Fill Out the API Routes to Perform RESTful CRUD Operations
 
