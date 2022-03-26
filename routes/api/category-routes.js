@@ -38,7 +38,7 @@ router.post("/", (req, res) => {
       .catch((err) => {
         res.json(err)
       })
- });
+ })});
 
  // update a category by its `id` value
 router.put("/:id", (req, res) => {
